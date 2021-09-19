@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link to style sheet-->
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css" />
-    <title>Code Quiz</title>
+    <title>JavaScript Code Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <div id="timer"></div>
-        <div id="quizQuestions">
-            <h1 class="welcome">Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions with the time limit. 
+    <div class="row">
+        <div class="col">
+            <a href="HighScores.html">View High Scores</a>
+        </div>
+        <div id="timer" class="col">
+            Time: <span id="timeLeft">0</span>
+        </div>
+        <div id="timesUp" class="col" style="display: none;">Time Is Up!</div>
+    </div>
+    <!--start the quiz-->
+    <div id="startQuiz" class="container">
+        <h1>Coding Quiz Challenge</h1>
+            <p>Hello! Try to answer the following code-related questions with the time limit. 
             </br>
                 Keep in mind that incorrect answers will penalize your score/time by <strong>10 seconds!</strong> </p>
-            <ul id="multipleChoice"></ul>
+            
             <!--button to start quiz-->
-            <button id="start">Start Quiz</button>   
+            <button type="button" id="start-quiz-btn">Start Quiz</button> 
+        <div id="currentSeconds"></div>
+
+        <!--code quiz div-->
+        <div id="questionDiv" style="display: none;">
+            <ul id="multipleChoice"></ul>
         </div>
     </div>
     
