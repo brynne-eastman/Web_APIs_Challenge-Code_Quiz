@@ -1,5 +1,5 @@
 //created an array for the multiple choice questions
-let questions = [
+var quizQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
         choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
@@ -33,47 +33,16 @@ let questions = [
 
 
 //Declared variabales
-let questionIndex = 0;
-let score = 0;
-let penalty = 10;
-let currentSeconds = getElementById("#currentSeconds");
-let multipleChoice = getElementById("#mulitpleChoice");
-let timer = document.getElementById("#timer");
-let startQuizBtn = getElementById("#start-quiz-btn");
+
+var container = document.getElementById("container");
+var questionsEl = document.getElementById("questions");
+var quizTimer = document.getElementById("timer");
+var startQuizDiv = document.getElementById("startpage");
+var startQuizBtn = document.getElementById("startQuizBtn");
+
+var questionIndex = 0;
+var timeLeft = 76;
+var timerInterval;
+var score = 0;
 
 
-let totalTime = 76;
-function startQuiz () {
-    totalTime = 75;
-    questionIndex = 0;
-    timeLeft.textContect = totalTime;
-    initialInput.textContect = "";
-
-    var timer = setInterval(function () {
-        totalTime--;
-        timeLeft.textContect = totalTime;
-        if(totalTime <=0) {
-            clearInterval(timer);
-            if (questionIndex < question.length -1) {
-                gameOver();
-            }
-        }
-    }, 1000);
-    quiz();
-}
-
-
-//timer.addEventListener("click", function (){
-    //if (interval === 0) {
-        //interval = setInterval(function () {
-            //time--;
-            //currentSeconds.textContect = "Time: " + time;
-            
-            //if (time <=0) {
-                //allDone();
-                //currentSeconds.textContect = "Time Is Up!"
-            //}
-        //}, 1000);
-    //}
-    //render(questionIndex);
-//})

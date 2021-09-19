@@ -9,32 +9,27 @@
     <title>JavaScript Code Quiz</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col">
-            <a href="HighScores.html">View High Scores</a>
-        </div>
-        <div id="timer" class="col">
-            Time: <span id="timeLeft">0</span>
-        </div>
-        <div id="timesUp" class="col" style="display: none;">Time Is Up!</div>
-    </div>
-    <!--start the quiz-->
-    <div id="startQuiz" class="container">
-        <h1>Coding Quiz Challenge</h1>
-            <p>Hello! Try to answer the following code-related questions with the time limit. 
-            </br>
-                Keep in mind that incorrect answers will penalize your score/time by <strong>10 seconds!</strong> </p>
-            
-            <!--button to start quiz-->
-            <button type="button" id="start-quiz-btn">Start Quiz</button> 
-        <div id="currentSeconds"></div>
-
-        <!--code quiz div-->
-        <div id="questionDiv" style="display: none;">
-            <ul id="multipleChoice"></ul>
-        </div>
-    </div>
+    <!--high score html file-->
+    <a href="HighScores.html">View High Scores</a>
     
+    
+    <!--quiz container-->
+    <div id="startPage" class="container">
+        <!--dive for timer-->
+        <div id="timer"></div>
+        <!---div for quiz questions-->
+        <div id="quiz"></div>
+        <h1>Coding Quiz Challenge</h1>
+        <p>Hello! Try to answer the following code-related questions with the time limit. 
+            </br>
+            Keep in mind that incorrect answers will penalize your score/time by <strong>10 seconds!</strong> 
+        </p>
+        <!--button to start quiz-->
+        <button type="button" id="startQuizBtn">Start Quiz</button> 
+        
+
+        
+     </div>   
     <!--link to js file-->
     <script src="./assets/js/script.js"></script>
 </body>
