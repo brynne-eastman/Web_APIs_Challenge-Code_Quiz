@@ -13,7 +13,7 @@ This week’s challenge was to build a timed coding quiz with multiple-choice qu
 * [License](#license)
 
 ### Installation
-No installation required - click link below to view application.
+No installation required - click the link below to view application.
 
 ### Usage
 Throughout the quiz, the user will be asked simple coding questions to test their knowledge.
