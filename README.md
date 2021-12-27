@@ -13,6 +13,7 @@ This week’s challenge was to build a timed coding quiz with multiple-choice qu
 * [Screengrab](#screengrab)
 * [Languages](#languages)
 * [License](#license)
+* [Questions](questions)
 
 ### User Story
 `AS A coding boot camp student
@@ -51,4 +52,7 @@ Throughout the quiz, the user will be asked simple coding questions to test thei
 
 ### License
 MIT
+
+### Questions
+If you have any questions about this application, please contact me at brynne.eastman@gmail.com. You can also view more applications at https://github.com/brynne-eastman.
 
