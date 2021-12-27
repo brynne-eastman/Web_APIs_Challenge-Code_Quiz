@@ -1,5 +1,5 @@
 //created an array for the multiple choice questions
-var quizQuestions = [
+const quizQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
         choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
@@ -27,22 +27,9 @@ var quizQuestions = [
     }
 
 ];
-//Giving the user 75 seconds to complete the quiz
+//Giving the user 90 seconds to complete the quiz
 //should be able to answer each question within 15 seconds
 //penalty for every wrong answers, 10 seconds is removed from current time
 
 
 //Declared variabales
-
-var container = document.getElementById("container");
-var questionsEl = document.getElementById("questions");
-var quizTimer = document.getElementById("timer");
-var startQuizDiv = document.getElementById("startpage");
-var startQuizBtn = document.getElementById("startQuizBtn");
-
-var questionIndex = 0;
-var timeLeft = 76;
-var timerInterval;
-var score = 0;
-
-
