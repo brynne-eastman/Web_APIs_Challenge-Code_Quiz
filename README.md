@@ -39,7 +39,7 @@ No installation required - click the link below to view application.
 Throughout the quiz, the user will be asked simple coding questions to test their knowledge.
 
 ### Website Link
-https://brynne-eastman.github.io/Web_APIs_Challenge-Code_Quiz/
+[Start Quiz](https://brynne-eastman.github.io/Web_APIs_Challenge-Code_Quiz/)
 
 ### Screengrab
 ![screenshot](./assets/images/code-quiz.png)
