@@ -10,26 +10,47 @@
 </head>
 <body>
     <!--high score html file-->
-    <a href="HighScores.html">View High Scores</a>
-    
-    
-    <!--quiz container-->
-    <div id="startPage" class="container">
-        <!--dive for timer-->
-        <div id="timer"></div>
-        <!---div for quiz questions-->
-        <div id="quiz"></div>
-        <h1>Coding Quiz Challenge</h1>
-        <p>Hello! Try to answer the following code-related questions with the time limit. 
-            </br>
-            Keep in mind that incorrect answers will penalize your score/time by <strong>10 seconds!</strong> 
-        </p>
-        <!--button to start quiz-->
-        <button type="button" id="startQuizBtn">Start Quiz</button> 
-        
+    <div class="scores"><a href="HighScores.html">View High Scores</a></div>
+    <div class="timer">Time:<span id="time">60</span></div>
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+           <h1>Coding Quiz Challenge</h1>
+                <p>Hello! Try to answer the following code-related questions with the time limit. 
+                </br>
+                Keep in mind that incorrect answers will penalize your score/time by <strong>10 seconds!</strong> 
+                </p> 
+                <div>
+                    <button type="button" class="start-btn" id="startQuizBtn">Start Quiz</button> 
+                </div>
+        </div>
 
-        
-     </div>   
+        <div id="question-container" class="hide">
+            <h2 id="question">Question</h2>
+            <div id="choices">
+                <button class="btn" id="btn-1">1. Answer</button>
+                <button class="btn" id="btn-2">2. Answer</button>
+                <button class="btn" id="btn-3">3. Answer</button>
+                <button class="btn" id="btn-4">4. Answer</button>
+            </div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h3>Nice Job!</h3>
+            <p>Your final score is <span id="finalScore"></span></p>
+            <p>
+                Enter your initials:
+                <form>
+                    <input type="text" name="initials" id="initials" placeholder="Enter Here"/>
+                </form>
+            </p>>
+            <div>
+                <button id="submit" class="submit" onclick="saveHighScore">Submit</button>
+            </div>
+        </div>
+
+    </div>
+    
+     
     <!--link to js file-->
     <script src="./assets/js/script.js"></script>
 </body>
