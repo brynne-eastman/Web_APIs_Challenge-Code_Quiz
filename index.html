@@ -10,8 +10,25 @@
 </head>
 <body>
     <!--high score html file-->
+    <a href="HighScores.html">View Highscores</a>
+    <div id="container">
+        <!-- time div -->
+        <div id="currentTime"></div>
+        <!-- quiz div -->
+        <div id="questionsEl">
+            <h1> Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. 
+                <br>
+                Keep in mind that incorrect answers will penalize your score/time by <strong>10 seconds!</strong></p>
+            <ul id="choicesUl"></ul>
+            <!-- start button -->
+            <button id="startTime">Start Quiz</button>
+        </div>
+
+    </div>
     
-    <a href="HighScores.html">View High Scores</a></div>
-    <div class="float-right">Time:<span id="timer">0</span></div>
-    
-    
+     
+    <!--link to js file-->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
